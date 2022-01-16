@@ -21,7 +21,7 @@ Steps to build a Docker image:
 1. Clone this repo
 
 ```python
-git clone https://github.com/cb372/docker-sample.git
+git clone https://github.com/vishalsharbidar/DiabetesPrediction_Docker.git
 ```
 
 2. Build the image
