@@ -48,4 +48,4 @@ open http://localhost:5000/apidocs
 ```
 
 5. The web page will look as per image
-#![A Swagger API](/reports/figures/plotly_result.png)
+![A Swagger API](/extra/swaggerAPI.png)
