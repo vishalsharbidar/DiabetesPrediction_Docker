@@ -44,5 +44,5 @@ docker run -p 5000:5000 diabetes_prediction
 4. Once everything has started up, you should be able to access the webapp via http://localhost:5000/ on your host machine.
 
 ```python
-open http://localhost:5000/
+open http://localhost:5000/apidocs
 ```
