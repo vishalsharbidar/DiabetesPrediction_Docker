@@ -3,7 +3,6 @@
 
 '''
 
-from crypt import methods
 from flask import Flask, request
 import pandas as pd
 import numpy as np
@@ -104,4 +103,7 @@ def Diabetes_prediction_file():
 
 
 if __name__=='__main__':
-    app.run()
+    app.run(host='0.0.0.0')
+
+
+#sudo docker run -p 5000:5000 diabetes_prediction1
