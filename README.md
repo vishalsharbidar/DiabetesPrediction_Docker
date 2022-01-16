@@ -3,8 +3,8 @@ Created a docker image for c
 
 An example Dockerfile for Diabetes Prediction ML model, + a few dependencies:
 
-Python 3.8
-git 2.30.2
+1. Python 3.8
+2. git 2.30.2
 
 
 # Prerequisites
