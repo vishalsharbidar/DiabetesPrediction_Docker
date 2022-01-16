@@ -20,30 +20,26 @@ Steps to build a Docker image:
 
 1. Clone this repo
 
+```python
 git clone https://github.com/cb372/docker-sample.git
+```
 
-2. Manually download JDK 8u20 (x64 rpm) from the Oracle site
-
-3. Copy the JDK rpm to the appropriate folder
-cd docker-sample
-mkdir jdk
-cp ~/Downloads/jdk-8u20-linux-x64.rpm jdk
-
-4. Build the image
-
+2. Build the image
+```python
 cd ..
-docker build -t="my-app" docker-sample
-
+docker build -t diabetes_prediction .
+```
 This will take a few minutes.
 
-5. Run the image's default command, which should start everything up. The -p option forwards the container's port 80 to port 8000 on the host. (Note that the host will actually be a guest if you are using boot2docker, so you may need to re-forward the port in VirtualBox.)
+3. Run the image's default command, which should start everything up. The -p option forwards the container's port 80 to port 8000 on the host. (Note that the host will actually be a guest if you are using boot2docker, so you may need to re-forward the port in VirtualBox.)
 
-docker run -p="8000:80" my-app
+```python
+cd ..
+docker run -p 5000:5000 diabetes_prediction
+```
 
-6. Once everything has started up, you should be able to access the webapp via http://localhost:8000/ on your host machine.
+4. Once everything has started up, you should be able to access the webapp via http://localhost:8000/ on your host machine.
 
-open http://localhost:8000/
+open http://localhost:5000/
 
-You can also login to the image and have a look around:
 
-docker run -i -t my-app /bin/bash
