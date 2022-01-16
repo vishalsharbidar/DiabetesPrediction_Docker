@@ -1,5 +1,4 @@
 # DiabetesPrediction_Docker
-Created a docker image for c
 
 An example Dockerfile for Diabetes Prediction ML model, + a few dependencies:
 
