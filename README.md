@@ -41,8 +41,11 @@ docker images
 docker run -p 5000:5000 diabetes_prediction
 ```
 
-4. Once everything has started up, you should be able to access the webapp via http://localhost:5000/ on your host machine.
+4. Once everything has started up, you should be able to access the webapp via http://localhost:5000/apidocs on your host machine.
 
 ```python
 open http://localhost:5000/apidocs
 ```
+
+5. The web page will look as per image
+#![A Swagger API](/reports/figures/plotly_result.png)
